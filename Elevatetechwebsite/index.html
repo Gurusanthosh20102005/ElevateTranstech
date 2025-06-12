@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elevate Transtech | Industrial Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f4f7fb, #e0eafc);
+      color: #222;
+    }
+    header {
+      background-image: url("images/img\ 1.jpg");
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-top: 15px;
+    }
+    nav {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(8px);
+      padding: 15px 30px;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff6600;
+    }
+      .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 18px;
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+      }
+      .nav-links.show {
+        max-height: 300px;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+    section {
+      padding: 80px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services, .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      transition: 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ff6600;
+    }
+    .card ul {
+      list-style: disc inside;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    iframe {
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .icon{
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        margin-left: 100px;
+    }
+    .logo
+    {
+        height: 50px;
+        width: 70px;
+        border-radius: 75%;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <nav>
+    
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <img class="logo" src="images/Logo_1.jpg">
+        <strong style="margin-left: 10px;">Elevate  </strong> Transtech </div>
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <img data-aos="fade-down" style="border-radius: 25px;" src="images/Logo_Name.jpg">
+    <h1 data-aos="fade-down">Elevate Transtech</h1>
+    <p data-aos="fade-up">Your Engineering Partner for Automation, Structural & Electrical Solutions</p>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2 data-aos="slide-up">Who We Are</h2><br>
+    <p data-aos="fade-left">
+      At Elevate Transtech, we envision an industry empowered by innovation and precision. We serve the manufacturing, automotive, and industrial automation sectors with expertise and integrity.
+    </p><br>
+     <h3 data-aos="slide-up">Our Vision</h3><br>
+  <p data-aos="fade-left">
+    Elevate Transtech shall be a professionally managed Indian company committed to total customer satisfaction.
+    We aim to foster a culture of care, trust, and continuous learning, while exceeding the expectations of clients and society.
+  </p><br>
+
+  <h3 data-aos="slide-up">Our Mission</h3><br>
+  <p data-aos="fade-left">
+    To provide complete solutions for the Automotive, Auto Ancillaries, Home Appliances, and other manufacturing sectors.
+    We specialize in Structural Work, Erection, Installation & Commissioning, Robotic & PLC Automation, and Electrical Installations,
+    delivering cutting-edge technology and unmatched service excellence.
+  </p><br>
+
+  <h3 data-aos="slide-up">Experience</h3><br>
+  <ul data-aos="fade-left">
+    <li>Renault Nissan Automotive India Pvt. Ltd., Oragadam</li>
+    <li>Hyundai Motor India Ltd., Sriperumbudur</li>
+    <li>Ford India Pvt. Ltd., Maraimalai Nagar</li>
+    <li>Kone Elevator India Pvt. Ltd., Sriperumbudur</li>
+  </ul>
+    <div class="video-container">
+      <iframe src="images/6450803-hd_1920_1080_25fps.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2>Our Services</h2> <br>
+    <div class="services">
+      <div class="card">
+        <h3>Mechanical Solutions</h3>
+        <img class="icon" src="images/mech logo.png"><br>
+        <ul>
+          <li>Fabrication: Pallets, Mezzanine Floors</li>
+          <li>Structures: Gantries, Rails, Runners</li>
+          <li>Handling: Hydraulic & Scissor Lifters</li>
+          <li>Precision: Jigs, Fixtures, Tooling</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Robotics & PLC</h3>
+        <img class="icon" src="images/robos logo.jpg"><br>
+        <ul>
+          <li>Robot Installation (ABB, Fanuc, KUKA)</li>
+          <li>PLC & SCADA Programming (Siemens, Omron)</li>
+          <li>Integration & Automation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Electrical Works (LT)</h3>
+        <img class="icon" src="images/elec logo.png"><br>
+        <ul>
+          <li>LT Cable Laying, Termination</li>
+          <li>DB & Control Panel Installation</li>
+          <li>Lighting, Industrial Fan Systems</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p><strong>Office:</strong> No:57, SF 749/8, Velleswaran Kovil Street, Mangadu, Chennai - 600122</p>
+    <p><strong>Factory:</strong> No:9, Malleswaram, Sengundram Village, Maraimalai Nagar, Chengalpattu - 603204</p>
+    <p><strong>Phone:</strong> +91 63826 22388 | +91 90804 30096</p>
+    <p><strong>Email:</strong> elevatetranstech@gmail.com</p>
+    <iframe src="https://www.google.com/maps?q=Mangadu,+Chennai,+India&output=embed" width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elevate Transtech. Crafted with innovation & precision.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+     function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
